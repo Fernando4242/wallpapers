@@ -1,12 +1,6 @@
-var folder = "images/";
 
-$.ajax({
-    url : folder,
-    success: function (data) {
-        $(data).find("a").attr("href", function (i, val) {
-            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                $(".img-container").append( "<img src='../"+ val +"'>" );
-            } 
-        });
-    }
-});
+var i;
+
+for (i = 0; i <= 37; i++) {
+    $(".img-container").append( "<img src='images/image("+ i +").png'>" );
+}
