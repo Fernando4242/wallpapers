@@ -1,4 +1,4 @@
-var folder = "images/";
+var folder = "../wallpapers/images/";
 
 $.ajax({
     url : folder,
