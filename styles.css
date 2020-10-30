@@ -1,11 +1,42 @@
 *{
-    background-color: black;
     margin: 0;
 }
  
 .container{
     margin: 0;
+    padding: 0;
 }
+
+header{
+    height: 800px;
+    background-image: url("images/your-name-girl.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    z-index: 0;
+    position: relative;
+}
+iframe{
+   display: none;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color:rgb(255, 174, 22);
+    background-color: transparent;
+    vertical-align: middle;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #000;
+    outline-style: double;
+    
+
+    padding:10px;
+}
+
 
 .img-container{
     display: flex;
@@ -13,6 +44,6 @@
     flex-wrap: wrap;
 }
 
-img{
+.img-container img{
     width: 50%;
 }
